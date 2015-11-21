@@ -25,3 +25,12 @@ $q = $db->sql(YOUR_SQL_STATEMENT);
 ```php
 $q = $db->sql(TABLE_NAME, [$rows="*", JOIN_STATEMENT = null, WHERE_STATEMENT = null, ORDER = "ASC", LIMIT]);
 ```
+Here's only first argument is mandatory, others is optional
+---
+$rows : default argument is set to "*", means select all rows, otherwise you have to pass array of collumn names
+$join : default argument is set to null
+$where : default argument is set to null, Where clouse of your SQL statement
+$order : default argument is set to "asc", options : "asc" or "desc"
+$limit : any integer, number of rows retrieved
+```
+---
